@@ -14,6 +14,10 @@
 		56434B412921428F0063AEF5 /* blendyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56434B402921428F0063AEF5 /* blendyTests.swift */; };
 		56434B4B2921428F0063AEF5 /* blendyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56434B4A2921428F0063AEF5 /* blendyUITests.swift */; };
 		56434B4D2921428F0063AEF5 /* blendyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56434B4C2921428F0063AEF5 /* blendyUITestsLaunchTests.swift */; };
+		56434B5C2921430B0063AEF5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56434B5B2921430B0063AEF5 /* LoginView.swift */; };
+		56434B5E292143F70063AEF5 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56434B5D292143F70063AEF5 /* Extension.swift */; };
+		569ED0F529234B2000CF4DED /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569ED0F429234B2000CF4DED /* Buttons.swift */; };
+		569ED0F7292352F200CF4DED /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569ED0F6292352F200CF4DED /* ColorExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		56434B462921428F0063AEF5 /* blendyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = blendyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56434B4A2921428F0063AEF5 /* blendyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blendyUITests.swift; sourceTree = "<group>"; };
 		56434B4C2921428F0063AEF5 /* blendyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blendyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		56434B5B2921430B0063AEF5 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		56434B5D292143F70063AEF5 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		569ED0F429234B2000CF4DED /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		569ED0F6292352F200CF4DED /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +102,12 @@
 		56434B2E2921428E0063AEF5 /* blendy */ = {
 			isa = PBXGroup;
 			children = (
+				56434B59292142F80063AEF5 /* ui */,
 				56434B2F2921428E0063AEF5 /* blendyApp.swift */,
 				56434B312921428E0063AEF5 /* ContentView.swift */,
 				56434B332921428F0063AEF5 /* Assets.xcassets */,
 				56434B352921428F0063AEF5 /* Preview Content */,
+				56434B5D292143F70063AEF5 /* Extension.swift */,
 			);
 			path = blendy;
 			sourceTree = "<group>";
@@ -125,6 +135,40 @@
 				56434B4C2921428F0063AEF5 /* blendyUITestsLaunchTests.swift */,
 			);
 			path = blendyUITests;
+			sourceTree = "<group>";
+		};
+		56434B59292142F80063AEF5 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				569ED0F329233E7D00CF4DED /* button */,
+				569ED0F029232E3200CF4DED /* color */,
+				56434B5A292142FD0063AEF5 /* login */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		56434B5A292142FD0063AEF5 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				56434B5B2921430B0063AEF5 /* LoginView.swift */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		569ED0F029232E3200CF4DED /* color */ = {
+			isa = PBXGroup;
+			children = (
+				569ED0F6292352F200CF4DED /* ColorExtensions.swift */,
+			);
+			path = color;
+			sourceTree = "<group>";
+		};
+		569ED0F329233E7D00CF4DED /* button */ = {
+			isa = PBXGroup;
+			children = (
+				569ED0F429234B2000CF4DED /* Buttons.swift */,
+			);
+			path = button;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +301,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56434B5C2921430B0063AEF5 /* LoginView.swift in Sources */,
 				56434B322921428E0063AEF5 /* ContentView.swift in Sources */,
+				569ED0F529234B2000CF4DED /* Buttons.swift in Sources */,
 				56434B302921428E0063AEF5 /* blendyApp.swift in Sources */,
+				56434B5E292143F70063AEF5 /* Extension.swift in Sources */,
+				569ED0F7292352F200CF4DED /* ColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
